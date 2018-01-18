@@ -1,0 +1,95 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ~~~~~~~~~~~~~~~~~~~ Desktop ~~~~~~~~~~~~~~~~~~~~~~
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+ @font-face {
+ font-family: "Atlas";
+ src: url("./AtlasGrotesk-Regular.ttf") format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  font-size: 100%;
+}
+
+.body{
+  display: block;
+  z-index: 100;
+  width:100%;
+}
+
+.body p,
+.body a{
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: Atlas;
+  line-height: 37px;
+}
+
+.body p+p{
+  margin-top: 30px;
+}
+
+p:first-child{
+  margin-top: 120px;
+}
+
+p{
+  margin-left: 400px;
+  display: block;
+  z-index: 0;
+  width: 580px;
+  margin: 0 auto;
+}
+
+a, .link{
+  text-decoration: none;
+  color: #FD4797;
+  z-index: 1000;
+  position: relative;
+  background-color: white;
+}
+
+canvas{
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /*width: 100%;
+  height: 100%;*/
+}
+
+.hidden--desktop{ display: none; }
+.hidden--mobile { display: inline; }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ~~~~~~~~~~~~~~~~~~~ mobile ~~~~~~~~~~~~~~~~~~~~~~
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+  .body p,
+  .body a{
+    margin: 0;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+  }
+
+  .body p{
+    margin-left: 5%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 80%;
+  }
+
+  .hidden--desktop{ display: inline; }
+  .hidden--mobile { display: none; }
+
+}
