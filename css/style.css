@@ -17,6 +17,7 @@ body {
 .main-content {
   font-size: 2em;
   padding: 32px;
+  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -32,7 +33,7 @@ a, .link{
 }
 
 a:hover {
-  color: #FF69B4;
+  color: pink;
 }
 
 canvas {

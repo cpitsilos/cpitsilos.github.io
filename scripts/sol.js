@@ -1,6 +1,6 @@
 var here = document.getElementById('here');
 var canvas = document.createElement( 'canvas' );
-canvas.style.position = 'absolute';
+canvas.style.position = 'fixed';
 // anyway to change this to height of div?
 // same with width
 canvas.width = here.clientWidth;
