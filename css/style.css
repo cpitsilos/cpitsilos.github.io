@@ -25,11 +25,15 @@ body {
 
 p {
   margin-bottom: 1em;
+  position: relative;
+  z-index: 200;
 }
 
 a, .link{
   color: #222;
+  position: relative;
   text-decoration: none;
+  z-index: 200;
 }
 
 a:hover {
