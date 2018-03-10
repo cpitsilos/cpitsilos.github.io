@@ -16,11 +16,9 @@ body {
 
 .main-content {
   font-size: 2em;
-  padding: 16px;
+  padding: 32px;
   height: 100%;
   width: 100%;
-  position: relative;
-  z-index: 99999;
 }
 
 
@@ -49,12 +47,6 @@ canvas {
 
  @media only screen and (min-width: 560px) {
   .main-content {
-    font-size: 3em;
+    font-size: 6em;
   }
  }
-
-@media only screen and (min-width: 780px) {
- .main-content {
-   font-size: 6em;
- }
-}
