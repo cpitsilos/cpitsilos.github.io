@@ -1,95 +1,60 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~ Desktop ~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
- @font-face {
- font-family: "Atlas";
- src: url("./AtlasGrotesk-Regular.ttf") format("truetype");
-}
-
-*{
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
+  color: #222;
   display: flex;
-  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
 }
 
-.body{
-  display: block;
-  z-index: 100;
-  width:100%;
+.main-content {
+  font-size: 2em;
+  padding: 32px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 99999;
 }
 
-.body p,
-.body a{
-  margin: 0 auto;
-  font-size: 30px;
-  font-family: Atlas;
-  line-height: 37px;
-}
 
-.body p+p{
-  margin-top: 30px;
-}
-
-p:first-child{
-  margin-top: 120px;
-}
-
-p{
-  margin-left: 400px;
-  display: block;
-  z-index: 0;
-  width: 580px;
-  margin: 0 auto;
+p {
+  margin-bottom: 1em;
 }
 
 a, .link{
+  color: #222;
   text-decoration: none;
-  color: #FD4797;
-  z-index: 1000;
-  position: relative;
-  background-color: white;
 }
 
-canvas{
+a:hover {
+  color: #FF69B4;
+}
+
+canvas {
   top: 0;
   left: 0;
   z-index: 100;
-  /*width: 100%;
-  height: 100%;*/
 }
-
-.hidden--desktop{ display: none; }
-.hidden--mobile { display: inline; }
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~ mobile ~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-
-  .body p,
-  .body a{
-    margin: 0;
-    font-size: 2.0rem;
-    line-height: 2.5rem;
+ @media only screen and (min-width: 560px) {
+  .main-content {
+    font-size: 3em;
   }
+ }
 
-  .body p{
-    margin-left: 5%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    width: 80%;
-  }
-
-  .hidden--desktop{ display: inline; }
-  .hidden--mobile { display: none; }
-
+@media only screen and (min-width: 780px) {
+ .main-content {
+   font-size: 6em;
+ }
 }
