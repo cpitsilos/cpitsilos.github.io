@@ -29,15 +29,12 @@ body {
   font-size: 2em;
   padding: 32px;
   position: relative;
-  height: 100%;
-  width: 100%;
 }
-
 
 p {
   margin-bottom: 1em;
   position: relative;
-  z-index: 200;
+  z-index : 200;
 }
 
 a, .link{
