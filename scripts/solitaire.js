@@ -1,6 +1,6 @@
 var info = document.getElementById('body');
 var canvas = document.createElement('canvas');
-canvas.style.position = 'absolute';
+canvas.style.position = 'fixed';
 canvas.width = here.clientWidth;
 canvas.height = here.clientHeight;
 document.body.appendChild(canvas);
