@@ -90,7 +90,7 @@ function onMouseMove(event) {
 
 }
 
-document.addEventListener('touchstart', function (event) {
+document.addEventListener('click', function (event) {
 
 	event.preventDefault();
 
