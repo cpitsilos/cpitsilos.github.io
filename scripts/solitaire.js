@@ -1,6 +1,6 @@
 var info = document.getElementById('body');
 var canvas = document.createElement('canvas');
-canvas.style.position = 'fixed';
+canvas.style.position = 'absolute';
 canvas.width = here.clientWidth;
 canvas.height = here.clientHeight;
 document.body.appendChild(canvas);
@@ -90,7 +90,7 @@ function onMouseMove(event) {
 
 }
 
-document.addEventListener('click', function (event) {
+document.addEventListener('touchstart', function (event) {
 
 	event.preventDefault();
 
