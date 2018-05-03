@@ -90,6 +90,24 @@ function onMouseMove(event) {
 
 }
 
+document.addEventListener('touchstart', function (event) {
+
+	event.preventDefault();
+
+	for (var i = 0; i < event.changedTouches.length; i++) {
+
+		throwCard(event.changedTouches[0].pageX, event.changedTouches[0].pageY);
+
+	}
+
+}, false);
+
+document.addEventListener('touchmove', function (event) {
+
+	event.preventDefault();
+
+}, false);
+
 setInterval(function () {
 
 	var i = 0, l = particles.length;
