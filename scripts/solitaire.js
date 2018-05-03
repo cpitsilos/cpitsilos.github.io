@@ -1,8 +1,8 @@
 var info = document.getElementById('body');
 var canvas = document.createElement('canvas');
-canvas.style.position = 'absolute';
-canvas.width = here.clientWidth;
-canvas.height = here.clientHeight;
+canvas.style.position = 'fixed';
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 document.body.appendChild(canvas);
 
 var context = canvas.getContext('2d');
