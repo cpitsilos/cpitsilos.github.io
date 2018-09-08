@@ -1,89 +1,146 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta author="title" content="Constantine Pitsilos">
-  <meta author="author" content="Constantine Pitsilos">
-  <meta name="description" content="Constantine Pitsilos">
-  <meta name="Copyright" content="Copyright - Constantine Pitsilos">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Jekyll v3.7.3" />
-  <meta property="og:title" content="Constantine Pitsilos" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:url" content="http://work.constantinepitsilos.com" />
-  <meta property="og:site_name" content="Constantine Pitsilos" />
-  <meta property="og:description" content="Constantine Pitsilos" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-  <title>Constantine Pitsilos - Work</title>
-</head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Password Protected</title>
 
-  <body ontouchstart="">
-    <div class="wrapper">
-  <a class="home-link" href="/work/" title="Constantine Pitsilos">
-    Constantine Pitsilos
-  </a>
-  <section>
-    <ul>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
 
-      <li>
-        <a href="work_posts/01-curry-ops" title="Curry Ops">
-          <img src="assets/images/curry-ops/thumbnail.png" />
-        </a>
-      </li>
+        <style>
+            *,
+            *:after,
+            *:before {
+                box-sizing: border-box;
+            }
+            body,
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                background: #f2f2f2;
+                color: #2D3737;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100%;
+            }
 
-      <li>
-        <a href="work_posts/02-imac-pro/" title="iMac Pro Films">
-          <img src="assets/images/imac-pro/thumbnail.png" />
-        </a>
-      </li>
+            .protected {
+                background: #fff;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                border-radius: 3px;
+                min-width: 500px;
 
-      <li>
-        <a href="work_posts/03-ebay/" title="eBay">
-          <img src="assets/images/ebay/thumbnail.png" />
-        </a>
-      </li>
+            }
+            .protected__content {
+                padding: 24px 28px;
+            }
+            .protected__content__heading {
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0 0 12px;
+                line-height: 1;
+            }
+            .protected__alert {
+                display: none;
+                border-bottom: 1px solid transparent;
+                border-radius: 3px 3px 0 0;
+                padding: 12px 14px;
+                color: #a94442;
+                background-color: #f2dede;
+                border-color: #ebccd1;
+            }
+            .protected__content__input {
+                display: block;
+                border: solid 1px #ccc;
+                padding: 12px 14px;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                font-size: 16px;
+                width: 100%;
+                border-radius: 3px;
 
-      <li>
-        <a href="work_posts/04-foodease/" title="Foodease">
-          <img src="assets/images/foodease/thumbnail.png" />
-        </a>
-      </li>
+                margin-bottom: 12px;
+            }
+            .protected__content__input:focus {
+                outline: none;
+                border-color: #228843;
+            }
+            .protected__content__btn {
+                background-color: #228843;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+                color: #fff;
+                padding: 12px 14px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
 
-      <li>
-        <a href="work_posts/05-215-west/" title="215 West">
-          <img src="assets/images/215-west/thumbnail.png" />
-        </a>
-      </li>
+            }
+            .protected__content__btn:hover {
+                background-color: #1C6D36;
+            }
 
-      <li>
-        <a href="work_posts/06-3d/" title="3D Objekte Drucken">
-          <img src="assets/images/3d/thumbnail.png" />
-        </a>
-      </li>
+        </style>
 
-      <li>
-        <a href="work_posts/07-mathien/" title="Mathien">
-          <img src="assets/images/mathien/thumbnail.png" />
-        </a>
-      </li>
+    </head>
 
-      <li>
-        <a href="work_posts/08-type-by-tape/" title="Type by Tape (Through Time)">
-          <img src="assets/images/tape/thumbnail.png" />
-        </a>
-      </li>
+    <body>
 
-      <li>
-        <a href="work_posts/09-beatrix/" title="Beatrix">
-          <img src="assets/images/beatrix/thumbnail.png" />
-        </a>
-      </li>
+        <div class="protected">
+            <div class="protected__alert" data-id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" data-id="password" type="password" placeholder="password"/>
+                <button data-id="button" type="button" class="protected__content__btn">Continue</button>
+            </div>
+        </div>
 
-    </ul>
-  </section>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
+        <script type="text/javascript">
+            "use strict"
+            var button = document.querySelectorAll('[data-id="button"]')
+            var password = document.querySelectorAll('[data-id="password"]')
 
-</div>
+            function login(secret) {
+                var hash = Sha1.hash(secret)
+                var url = hash + "/index.html"
+                var alert = document.querySelectorAll('[data-id="alert"]')
 
-  </body>
+                var request = new XMLHttpRequest()
+                request.open('GET', url, true)
+
+                request.onload = function () {
+                    if (request.status >= 200 && request.status < 400) {
+                        window.location = url
+                    } else {
+                        parent.location.hash = hash
+                        alert[0].style.display = 'block'
+                        password[0].setAttribute('placeholder', 'Incorrect password')
+                        password[0].value = ''
+                    }
+                }
+                request.onerror = function () {
+                    parent.location.hash = hash
+                    alert[0].style.display = 'block'
+                    password[0].setAttribute('placeholder', 'Incorrect password')
+                    password[0].value = ''
+                }
+                request.send()
+            }
+
+            button[0].addEventListener("click", function () {
+                login(password[0].value)
+            })
+
+            document.onkeydown = function (e) {
+                e = e || window.event
+                if (e.keyCode == 13) {
+                    login(password[0].value)
+                }
+            }
+        </script>
+    </body>
 </html>
