@@ -24,13 +24,13 @@ body {
   padding: 2em; }
 
 img {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
   width: 100%; }
 
 h1 {
   font-size: 1em;
   font-weight: normal;
-  padding-bottom: 2em; }
+  margin-bottom: 2em; }
 
 .wrapper {
   height: 100%;
@@ -62,5 +62,36 @@ h1 {
 
 .iframe {
   margin-bottom: 2em; }
+
+.thumbnails--home a:hover h2 {
+  opacity: 1; }
+
+.thumbnails--home a:hover:after {
+  max-height: 150px;
+  height: 100%; }
+
+.thumbnails--home a {
+  display: block;
+  position: relative; }
+
+.thumbnails--home h2 {
+  padding: 2em;
+  opacity: 0;
+  transition: 250ms ease;
+  position: absolute;
+  z-index: 2; }
+.thumbnails--home a {
+  color: white;
+  text-decoration: none; }
+.thumbnails--home a::after {
+  background-color: rgba(0, 0, 0, 0.3);
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: 250ms ease;
+  top: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

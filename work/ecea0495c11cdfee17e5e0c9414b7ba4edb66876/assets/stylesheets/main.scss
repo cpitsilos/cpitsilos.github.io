@@ -38,7 +38,7 @@ body {
 }
 
 img {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
   width: 100%;
 }
 
@@ -92,4 +92,47 @@ h1 {
 
 .iframe {
   margin-bottom: 2em;
+}
+
+.thumbnails--home a:hover {
+  h2 {
+    opacity: 1;
+  }
+}
+
+.thumbnails--home a:hover:after {
+  max-height: 150px;
+  height: 100%;
+}
+
+.thumbnails--home a {
+  display: block;
+  position: relative;
+}
+
+.thumbnails--home {
+  h2 {
+    padding: 2em;
+    opacity: 0;
+    transition: 250ms ease;
+    position: absolute;
+    z-index: 2;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a::after {
+    background-color: rgba(0,0,0,.3);
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: 250ms ease;
+    top: 0;
+    width: 100%;
+  }
 }
