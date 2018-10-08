@@ -21,7 +21,10 @@ body {
   line-height: 1.4;
   max-width: 2024px;
   min-height: 100%;
-  padding: 2em; }
+  padding: 15px; }
+  @media only screen and (min-width: 768px) {
+    body {
+      padding: 2em; } }
 
 img {
   padding-bottom: 2em;
@@ -75,16 +78,20 @@ h1 {
   position: relative; }
 
 .thumbnails--home h2 {
-  padding: 2em;
+  font-size: 1em;
+  padding: 1em;
   opacity: 0;
   transition: 250ms ease;
   position: absolute;
   z-index: 2; }
+  @media only screen and (min-width: 768px) {
+    .thumbnails--home h2 {
+      font-size: 2em; } }
 .thumbnails--home a {
   color: white;
   text-decoration: none; }
 .thumbnails--home a::after {
-  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   content: '';
   display: block;
   left: 0;

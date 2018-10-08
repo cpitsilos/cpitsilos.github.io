@@ -34,7 +34,11 @@ body {
   line-height: 1.4;
   max-width: 2024px;
   min-height: 100%;
-  padding: 2em;
+  padding: 15px;
+
+  @include breakpoint(768px) {
+    padding: 2em;
+  }
 }
 
 img {
@@ -112,11 +116,16 @@ h1 {
 
 .thumbnails--home {
   h2 {
-    padding: 2em;
+    font-size: 1em;
+    padding: 1em;
     opacity: 0;
     transition: 250ms ease;
     position: absolute;
     z-index: 2;
+
+    @include breakpoint(768px) {
+      font-size: 2em;
+    }
   }
 
   a {
@@ -125,7 +134,7 @@ h1 {
   }
 
   a::after {
-    background-color: rgba(0,0,0,.3);
+    background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,0));
     content: '';
     display: block;
     left: 0;
