@@ -41,6 +41,10 @@ body {
   }
 }
 
+a {
+  color: #222;
+}
+
 img {
   padding-bottom: 2em;
   width: 100%;
@@ -88,6 +92,10 @@ h1 {
   display: block;
   margin-bottom: 6em;
   text-decoration: none;
+
+  + p {
+    margin-bottom: 2em;
+  }
 }
 
 .vp-player-layout {
