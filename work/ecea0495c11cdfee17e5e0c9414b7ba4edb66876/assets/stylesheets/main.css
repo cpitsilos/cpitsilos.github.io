@@ -30,7 +30,9 @@ a {
   color: #222; }
 
 img {
-  padding-bottom: 2em;
+  display: block;
+  margin: 0;
+  padding: 0;
   width: 100%; }
 
 h1 {
@@ -80,13 +82,14 @@ h1 {
 
 .thumbnails--home a {
   display: block;
+  margin-bottom: 2em;
   position: relative; }
 
 .thumbnails--home h2 {
   font-size: 1em;
   padding: 1em;
   opacity: 0;
-  transition: 350ms ease;
+  transition: 450ms ease;
   position: absolute;
   z-index: 2; }
   @media only screen and (min-width: 768px) {
@@ -96,13 +99,13 @@ h1 {
   color: white;
   text-decoration: none; }
 .thumbnails--home a::after {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background: rgba(0, 0, 0, 0.5);
   content: '';
   display: block;
   left: 0;
   position: absolute;
   right: 0;
-  transition: max-height 350ms ease;
+  transition: max-height 450ms ease;
   top: 0;
   width: 100%; }
 
