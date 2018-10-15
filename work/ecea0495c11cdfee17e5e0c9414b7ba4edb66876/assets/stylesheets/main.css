@@ -92,6 +92,9 @@ h1 {
   transition: 450ms ease;
   position: absolute;
   z-index: 2; }
+  .thumbnails--home .project--info h2,
+  .thumbnails--home .project--info p {
+    font-size: 1em; }
   .thumbnails--home .project--info p {
     color: #a0a0a0; }
   @media only screen and (min-width: 768px) {
