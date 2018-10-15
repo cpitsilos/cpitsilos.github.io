@@ -109,7 +109,7 @@ h1 {
 }
 
 .thumbnails--home a:hover {
-  h2 {
+  .project--info {
     opacity: 1;
   }
 }
@@ -126,13 +126,17 @@ h1 {
 }
 
 .thumbnails--home {
-  h2 {
+  .project--info {
     font-size: 1em;
     padding: 1em;
     opacity: 0;
     transition: 450ms ease;
     position: absolute;
     z-index: 2;
+
+    p {
+      color: #a0a0a0;
+    }
 
     @include breakpoint(768px) {
       font-size: 2em;

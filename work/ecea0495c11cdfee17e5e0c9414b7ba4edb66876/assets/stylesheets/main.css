@@ -73,7 +73,7 @@ h1 {
 .iframe {
   margin-bottom: 2em; }
 
-.thumbnails--home a:hover h2 {
+.thumbnails--home a:hover .project--info {
   opacity: 1; }
 
 .thumbnails--home a:hover:after {
@@ -85,15 +85,17 @@ h1 {
   margin-bottom: 2em;
   position: relative; }
 
-.thumbnails--home h2 {
+.thumbnails--home .project--info {
   font-size: 1em;
   padding: 1em;
   opacity: 0;
   transition: 450ms ease;
   position: absolute;
   z-index: 2; }
+  .thumbnails--home .project--info p {
+    color: #a0a0a0; }
   @media only screen and (min-width: 768px) {
-    .thumbnails--home h2 {
+    .thumbnails--home .project--info {
       font-size: 2em; } }
 .thumbnails--home a {
   color: white;
