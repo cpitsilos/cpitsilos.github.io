@@ -48,7 +48,9 @@ h1 {
 .post-wrapper .post {
   width: 100%; }
   .post-wrapper .post p {
-    margin-bottom: 2em; }
+    margin-bottom: 1em; }
+    .post-wrapper .post p:last-child {
+      margin-bottom: 2em; }
   @media only screen and (min-width: 768px) {
     .post-wrapper .post {
       float: right;
