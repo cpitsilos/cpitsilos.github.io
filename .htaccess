@@ -1,5 +1,7 @@
 SetEnvIf Referer constantinepitsilos\.com localreferer
 
+Redirect 301 / https://constantinepitsilos.com/work
+
 <FilesMatch \.(eot|woff|woff2|ttf)$>
 Order deny,allow
 Deny from all
