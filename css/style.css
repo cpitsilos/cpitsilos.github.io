@@ -18,51 +18,87 @@
   padding: 0;
 }
 
+html {
+  font-size: .45vw;
+}
+
 body {
   color: #222;
-  display: flex;
   font-family: basis-grotesque-regular-pro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  line-height: 1.1;
 }
 
 .main-content {
-  font-size: 4em;
+  font-size: 16rem;
   padding: 32px;
-  position: relative;
+}
+
+a {
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  margin-bottom: 1em;
-  position: relative;
-  z-index : 200;
+  margin-bottom: 24px;
 }
 
 a, .link{
   color: #222;
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
   z-index: 99999;
+}
+
+img {
+  /* max-width: 500px; */
+  padding: 0;
+  margin: 0 0 32ox 9;
+  max-width: 100%;
 }
 
 a:hover {
   color: pink;
 }
 
-canvas {
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -2;
+.project--info {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
+
+.thumbnails--home {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: space-between;
+
+}
+
+.thumbnails--home ul {
+  list-style-type: none;
+  padding: 0 32px;
+}
+
+.thumbnails--home ul:nth-child(2) {
+  margin-top: 128px;
+}
+
+.thumbnails--home a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.thumbnails--home .project--info p {
+  color: #a0a0a0;
+}
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~ mobile ~~~~~~~~~~~~~~~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
- @media only screen and (min-width: 560px) {
+ @media only screen and (max-width: 560px) {
   .main-content {
-    font-size: 8em;
+    font-size: 6vw;
   }
  }
